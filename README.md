@@ -26,6 +26,11 @@ Install the above dependencies.
 cd GEM
 pip install -r requirements.txt
 ```
+Install [Deformable Convolution V2](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0)
+```
+cd codes/model/DCN_v2/
+sh make.sh
+```
 
 ## Download model and data
 [Pretrained models](https://1drv.ms/f/s!AgjOZB4WHoLei2Kz5horpPI6A1aP?e=dNZypa) and [datasets](https://1drv.ms/f/s!AgjOZB4WHoLei2PMmIQza0cPaWZA?e=acFSD4) can be downloaded via One Drive.
