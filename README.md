@@ -21,13 +21,10 @@ Clone this repository.
 ```
 git clone git@github.com:XiangZ-0/GEM.git
 ```
-Install the above dependencies.
+Install the above dependencies and [Deformable Convolution V2](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0)
 ```
 cd GEM
 pip install -r requirements.txt
-```
-Install [Deformable Convolution V2](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0)
-```
 cd codes/model/DCN_v2/
 sh make.sh
 ```
