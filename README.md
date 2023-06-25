@@ -38,6 +38,7 @@ In our paper, we conduct experiments on three types of data:
 - **MS-RBD** contains real-world blurry images and real-world events collected by ourselves. A beam splitter connecting a FLIR BlackFly S RGB camera and a DAVIS346 event camera is built for data collection. In total, our MS-RBD contains 32 sequences composed of 22 indoor and 10 outdoor scenes, where each sequence consists of 60 RGB 1152x768 blurry frames and the concurrent 288x192 events. For self-supervised methods, we select 5 and 3 sequences from the indoor and outdoor scenes for testing and leave the rest for training. For supervised approaches, all sequences can be used for qualitative evaluation of deblurring performance in real-world scenarios.
 
 <div align=center> <img src="figs/camera_setup.jpg" height="250"> </div>
+<div align=center> MS-RBD capture system </div>
 
 ## Quick start
 ### Initialization
