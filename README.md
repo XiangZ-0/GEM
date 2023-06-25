@@ -33,9 +33,9 @@ sh make.sh
 [Pretrained models](https://1drv.ms/f/s!AgjOZB4WHoLei2Kz5horpPI6A1aP?e=dNZypa) and [datasets](https://1drv.ms/f/s!AgjOZB4WHoLei2PMmIQza0cPaWZA?e=acFSD4) can be downloaded via One Drive.
 <br>
 In our paper, we conduct experiments on three types of data:
-- **Ev-REDS** (TBD) contains synthetic blurry images and synthetic events. We first convert [REDS](https://seungjunnah.github.io/Datasets/reds.html) into high frame rate videos using [RIFE](https://github.com/hzwer/arXiv2021-RIFE), and then obtain blurry images by averaging sharp frames and generate events by [ESIM](https://github.com/uzh-rpg/rpg_vid2e).
-- **HS-ERGB** (TBD) contains synthetic blurry images and real-world events from [HQF](https://timostoff.github.io/20ecnn), where blurry images are generated using the same manner as GoPro.
-- **MS-RBD** (TBD) contains real-world blurry images and real-world events from [RBE](https://github.com/xufangchn/Motion-Deblurring-with-Real-Events).
+- **Ev-REDS** contains synthetic 1280x640 blurry images and synthetic 320x160 events. We first convert [REDS](https://seungjunnah.github.io/Datasets/reds.html) into high frame rate videos using [RIFE](https://github.com/hzwer/arXiv2021-RIFE), and then obtain blurry images by averaging sharp frames and generate events from down-sampled images via [VID2E](https://github.com/uzh-rpg/rpg_vid2e).
+- **HS-ERGB** contains synthetic blurry images and real-world events from [HS-ERGB](https://github.com/uzh-rpg/rpg_timelens). We first convert HS-ERGB into high frame rate videos using [Time Lens](https://github.com/uzh-rpg/rpg_timelens) and then synthesize blurry images by averaging sharp frames. Since only the test set of HS-ERGB is available, we choose 4 sequences (*far-bridge_lake_01*, *close-fountain_schaffhauserplatz_02*, *close-spinning_umbrella*, and *close-water_bomb_floor_01*) for testing and leave the rest for training. We mannually filter the static frames in the HS-ERGB dataset (where no motion blur occurs) to ensure valid evaluation of deblurring performance.
+- **MS-RBD** contains real-world blurry images and real-world events collected by ourselves. A beam splitter connecting a FLIR BlackFly S RGB camera and a DAVIS346 event camera is built for data collection. In total, our MS-RBD contains 32 sequences composed of 22 indoor and 10 outdoor scenes, where each sequence consists of 60 RGB 1152x768 blurry frames and the concurrent 288x192 events. For self-supervised methods, we select 5 and 3 sequences from the indoor and outdoor scenes for testing and leave the rest for training. For supervised approaches, all sequences can be used for qualitative evaluation of deblurring performance in real-world scenarios.
 
 
 ## Quick start
@@ -113,11 +113,11 @@ python Train.py
 If you find our work useful in your research, please cite:
 
 ```
-@inproceedings{zhang2022unifying,
-  title={Unifying Motion Deblurring and Frame Interpolation with Events},
-  author={Zhang, Xiang and Yu, Lei},
-  year={2022},
-  booktitle={CVPR},
+@inproceedings{zhang2022generalizingc,
+  title={Generalizing Event-Based Motion Deblurring in Real-World Scenarios},
+  author={Zhang, Xiang and Yu, Lei and Yang, Wen and Liu, Jianzhuang and Xia, Gui-Song},
+  year={2023},
+  booktitle={ICCV},
 }
 ```
 
