@@ -40,10 +40,10 @@ In our paper, we conduct experiments on three types of data:
 <div align=center> <img src="figs/camera_setup.jpg" height="200"> </div>
 <div align=center> MS-RBD capture system </div>
 
-<div align=center> <img src="figs/dataset_detail.png" width="500"> </div>
+<div align=center> <img src="figs/dataset_detail.png" width="600"> </div>
 <div align=center> Overview of MS-RBD </div>
 
-<div align=center> <img src="figs/dataset_example.png" width="700"> </div>
+<div align=center> <img src="figs/dataset_example.png" width="600"> </div>
 <div align=center> Examples of MS-RBD </div>
 
 ## Quick start
