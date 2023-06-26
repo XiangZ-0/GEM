@@ -43,7 +43,8 @@ In our paper, we conduct experiments on three types of data:
 <div align=center> <img src="figs/dataset_detail.png" width="600"> </div>
 <div align=center> Overview of MS-RBD </div>
 
-<div align=center> <img src="figs/dataset_example.png" width="600"> </div>
+<div align=center> <img src="figs/dataset_examples1.png" width="800"> </div>
+<div align=center> <img src="figs/dataset_examples2.png" width="800"> </div>
 <div align=center> Examples of MS-RBD </div>
 
 ## Quick start
