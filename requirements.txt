@@ -1,0 +1,15 @@
+h5py==3.8.0
+hdf5storage==0.1.19
+matplotlib==3.5.0
+numpy==1.21.6
+opencv_python==4.7.0.72
+pathlib2==2.3.7.post1
+pytorch_lightning==1.6.0
+scikit_image==0.19.3
+scipy==1.7.3
+setuptools==59.5.0
+sewar==0.4.5
+pyyaml==6.0
+warmup_scheduler==0.3
+torch==1.10.0+cu111
+torchvision==0.11.0+cu111
