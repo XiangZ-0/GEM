@@ -49,12 +49,12 @@ In our paper, we conduct experiments on three types of data:
 
 ## Easy start
 ### Initialization
-- Change the parent directory to './codes/'
+- Change the parent directory to `./codes/`
 ```
 cd codes
 ```
-- Download and unzip [pretrained models](https://1drv.ms/f/s!AgjOZB4WHoLei2Kz5horpPI6A1aP?e=dNZypa) to directory './checkpoint/'
-- Download and unzip [datasets](https://1drv.ms/f/s!AgjOZB4WHoLei2PMmIQza0cPaWZA?e=acFSD4) to directory './datasets/'
+- Download and unzip [pretrained models](https://1drv.ms/f/s!AgjOZB4WHoLei2Kz5horpPI6A1aP?e=dNZypa) to directory `./checkpoint/`
+- Download and unzip [datasets](https://1drv.ms/f/s!AgjOZB4WHoLei2PMmIQza0cPaWZA?e=acFSD4) to directory `./datasets/`
 
 ### Test
 - Test on Ev-REDS data
