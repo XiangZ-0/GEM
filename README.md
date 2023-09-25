@@ -69,7 +69,7 @@ python main.py --yaml_path configs/hsergb_test.yaml
 ```
 python main.py --yaml_path configs/msrbd_test.yaml
 ```
-Deblurred results will be saved in './results/'. Note that the script will automatically compute PSNR and SSIM for Ev-REDS and HS-ERGB datasets. Since MS-RBD is a real-world dataset without ground-truth images, we predict the central sharp latent image for qualitative evaluation in real-world scenarios. 
+Deblurred results will be saved in `./results/`. Note that the script will automatically compute PSNR and SSIM for Ev-REDS and HS-ERGB datasets. Since MS-RBD is a real-world dataset without ground-truth images, we predict the central sharp latent image for qualitative evaluation in real-world scenarios. 
 
 ### Train
 - Train on Ev-REDS data
@@ -84,7 +84,7 @@ python main.py --yaml_path configs/hsergb_train.yaml
 ```
 python main.py --yaml_path configs/msrbd_train.yaml
 ```
-If you want to train a model on your own dataset (especially real-world datasets), it is recommended to pack your data in the MS-RBD format and then modify 'configs/msrbd_train.yaml' according to your needs for training :)
+If you want to train a model on your own dataset (especially real-world datasets), it is recommended to pack your data in the MS-RBD format and then modify `configs/msrbd_train.yaml` according to your needs for training :)
 
 ## Citation
 If you find our work useful in your research, please consider citing:
