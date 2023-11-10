@@ -71,6 +71,14 @@ python main.py --yaml_path configs/msrbd_test.yaml
 ```
 Deblurred results will be saved in `./results/`. Note that the script will automatically compute PSNR and SSIM for Ev-REDS and HS-ERGB datasets. Since MS-RBD is a real-world dataset without ground-truth images, we predict the central sharp latent image for qualitative evaluation in real-world scenarios. 
 
+For testing on your own datasets, we recommend packing your data in the [MS-RBD format](https://github.com/XiangZ-0/GEM/tree/main/codes/datasets) and then modifying the following parameters in `configs/msrbd_test.yaml` according to your needs. Then it is good to go.
+```
+- load_dir:        # change it to your path to load checkpoints
+- root_path:       # change it to your dataset directory
+- save_path:       # change it to your result directory
+- scale_factor:    # change it according to the spatial resolution ratio of images over events in your dataset
+```
+
 ### Train
 - Train on Ev-REDS data
 ```
