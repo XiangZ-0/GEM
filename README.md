@@ -84,7 +84,7 @@ python main.py --yaml_path configs/hsergb_train.yaml
 ```
 python main.py --yaml_path configs/msrbd_train.yaml
 ```
-If you want to train a model on your own dataset (especially real-world datasets), it is recommended to pack your data in the MS-RBD format and then modify `configs/msrbd_train.yaml` according to your needs for training :)
+If you want to train a model on your own dataset (especially real-world datasets), it is recommended to pack your data in the [MS-RBD format](https://github.com/XiangZ-0/GEM/tree/main/codes/datasets) and then modify `configs/msrbd_train.yaml` according to your needs for training. :)
 
 ## Citation
 If you find our work useful in your research, please consider citing:
