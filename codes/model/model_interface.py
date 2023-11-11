@@ -20,7 +20,7 @@ from .metrics import compare_psnr, compare_ssim
 class MInterface(pl.LightningModule):
     def __init__(self, model_name, loss, lr, **kargs):
         super().__init__()
-        self.save_hyperparameters()
+        self.save_hyperparameters(ignore=["callbacks"])
         self.configure_loss()
         self.model = self.load_model()
         self.teacher_model = self.load_model()
